@@ -1,0 +1,31 @@
+name: Gatsby Publish
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore: '**/README.md'
+  pull_request:
+    branches: [ main ]
+    paths-ignore: '**/README.md'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: enriikke/gatsby-gh-pages-action@v2.2.0
+        env:
+          NODE_ENV: ${{ secrets._NODE_ENV }}
+        with:
+          access-token: ${{ secrets.ACCESS_TOKEN }}
+          deploy-branch: main
+          deploy-repo: chatbus/chatbus.github.io
+          # Additional arguments that get passed to `gatsby build`.
+          # gatsby-args: # optional, default is 
+          # Builds your Gatsby site but skips publishing by setting it to `true`. Helpful for testing/debugging Workflows.
+          skip-publish: false
+          # working-dir: # optional, default is .
+          # The commit message used for pushing changes to the deploy branch.
+          # commit-message: # optional, default is 
+          git-config-name: JiamSeo
+          git-config-email: jams7777@gmail.com
