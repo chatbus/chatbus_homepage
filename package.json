@@ -1,0 +1,35 @@
+{
+  "name": "chatbus_homepage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chatbus Homepage",
+  "author": "jams7777@gmail.com",
+  "keywords": [
+    "chatbus"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^2.1.2",
+    "gatsby": "^4.21.0",
+    "gatsby-plugin-image": "^2.20.0",
+    "gatsby-plugin-mdx": "^4.0.0",
+    "gatsby-plugin-sharp": "^4.20.0",
+    "gatsby-source-filesystem": "^4.20.0",
+    "gatsby-transformer-sharp": "^4.20.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chatbus/chatbus_hompage"
+  },
+  "bugs": {
+    "url": "https://github.com/chatbus/chatbus_hompage/issues"
+  }
+}
