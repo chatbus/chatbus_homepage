@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import MemberCard from "../components/MemberCard";
+import MemberCard from "../components/memberCard";
 
 const MemberPage = () => {
   const members = [

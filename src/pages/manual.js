@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
-import Navigator from "../components/Navigator";
+import Navigator from "../components/navigator";
 
 const ManualPage = () => {
   const menu = ["중메뉴1", "중메뉴2", "중메뉴3"];
