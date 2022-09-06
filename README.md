@@ -1,3 +1,8 @@
+<style>
+.readme_avatar {
+  border-radius: 50%;
+}
+</style>
 <p align="center">
   <a href="https://chatbus.github.io">
     <img alt="chatbus" src="https://avatars.githubusercontent.com/u/110974823?s=100&v=4" width="100" />
@@ -83,7 +88,7 @@
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/jams777" target="_blank"><img src="https://avatars.githubusercontent.com/u/2595527?v=4&s=100" width="100px;" alt=""/></a></td>
+    <td align="center"><a href="https://github.com/jams777" target="_blank"><img src="https://avatars.githubusercontent.com/u/2595527?v=4&s=100" width="100px;" alt="" class="readme_avatar" /></a></td>
     <td align="center"><sub><b>도니</b></sub></td>
     <td align="center">환경구성 <br />프로젝트 관리</td> 
     <td align="center"><a href="https://github.com/jams777" target="_blank"><img src="http://img.shields.io/badge/-jams777-black?style=plastic&logo=github" alt=""/></a></td>
@@ -92,7 +97,7 @@
     <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/pulls?q=is%3Apr+assignee%3Ajams777" title="Pull Requests">Pull Request<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Ajams777+is%3Aopen+is%3Apr" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/thgml21004" target="_blank"><img src="https://avatars.githubusercontent.com/u/56290407?v=4&s=100" width="100px;" alt=""/></a></td>
+    <td align="center"><a href="https://github.com/thgml21004" target="_blank"><img src="https://avatars.githubusercontent.com/u/56290407?v=4&s=100" width="100px;" alt="" class="readme_avatar" /></a></td>
     <td align="center"><sub><b>엘라</b></sub></td>
     <td align="center">디자인 및 퍼블리싱<br />프론트 개발</td> 
     <td align="center"><a href="https://github.com/thgml21004" target="_blank"><img src="http://img.shields.io/badge/-thgml21004-black?style=plastic&logo=github" alt=""/></a></td>
@@ -101,7 +106,7 @@
     <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/pulls?q=is%3Apr+assignee%3Athgml21004" title="Pull Requests">Pull Request<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Athgml21004+is%3Aopen+is%3Apr" /></a></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/CheonInJeong" target="_blank"><img src="https://avatars.githubusercontent.com/u/80233325?v=4&s=100" width="100px;" alt=""/></a></td>
+    <td align="center"><a href="https://github.com/CheonInJeong" target="_blank"><img src="https://avatars.githubusercontent.com/u/80233325?v=4&s=100" width="100px;" alt="" class="readme_avatar" /></a></td>
     <td align="center"><sub><b>첸첸</b></sub></td>
     <td align="center">프론트 개발<br />테스트</td> 
     <td align="center"><a href="https://github.com/CheonInJeong" target="_blank"><img src="http://img.shields.io/badge/-CheonInJeong-black?style=plastic&logo=github" alt=""/></a></td>
