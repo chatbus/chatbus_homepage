@@ -1,7 +1,7 @@
-name: Gatsby Publish
+name: Gatsby Test
 
 on:
-  push:
+  pull_request:
     branches: [ main ]
     paths-ignore: '**/README.md'
 
@@ -20,7 +20,7 @@ jobs:
           # Additional arguments that get passed to `gatsby build`.
           # gatsby-args: # optional, default is 
           # Builds your Gatsby site but skips publishing by setting it to `true`. Helpful for testing/debugging Workflows.
-          skip-publish: false
+          skip-publish: true
           # working-dir: # optional, default is .
           # The commit message used for pushing changes to the deploy branch.
           # commit-message: # optional, default is 
