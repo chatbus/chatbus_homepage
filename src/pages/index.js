@@ -1,5 +1,6 @@
 import * as React from "react";
 import Layout from "../components/layout";
+import "../components/main.css";
 
 const IndexPage = () => {
   
@@ -15,7 +16,7 @@ const IndexPage = () => {
   
   return (
     <Layout pageTitle="프로젝트 소개">
-      <p>chatbus hompage</p>
+      <p>chatbus hompage hi</p>
     </Layout>
   );
 };
