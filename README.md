@@ -81,25 +81,35 @@
 
 ## Contributors
 
-   - <img src="https://avatars.githubusercontent.com/u/2595527?v=4&s=48" width="48px;" alt="도니" style="border-radius:48px;"/> <br/>
-     
-     [![@jams777](http://img.shields.io/badge/-jams777-black?style=flat-square&logo=github&link=https://github.com/jams777)](https://github.com/jams777)  
-
-     도니 : 환경구성 및 프로젝트 관리  <br/> 
-
-
-   - <img src="https://avatars.githubusercontent.com/u/56290407?v=4&s=48" width="48px;" alt="엘라" style="border-radius:48px;"/> <br/>
-
-     [![@thgml21004](http://img.shields.io/badge/-thgml21004-black?style=flat-square&logo=github&link=https://github.com/thgml21004)](https://github.com/thgml21004)
-
-     엘라 : 디자인 및 퍼블리싱, 프론트 개발  <br/>
-
-
-   - <img src="https://avatars.githubusercontent.com/u/80233325?v=4&s=48" width="48px;" alt="첸첸" style="border-radius:48px;"/>  
-
-     [![@CheonInJeong](http://img.shields.io/badge/-CheonInJeong-black?style=flat-square&logo=github&link=https://github.com/CheonInJeong)](https://github.com/CheonInJeong)
-
-     첸첸 : 프론트 개발 및 테스트 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/jams777"><img src="https://avatars.githubusercontent.com/u/2595527?v=4&s=100" width="100px;" alt=""/></a></td>
+    <td align="center"><sub><b>도니</b></sub></td>
+    <td align="center">환경구성 <br />프로젝트 관리</td> 
+    <td align="center"><img src="http://img.shields.io/badge/-jams777-black?style=for-the-badge&logo=github&link=https://github.com/jams777" alt=""/></td>
+    <td align="center"><img src="https://img.shields.io/badge/-commit-black??style=for-the-badge&logo=github&link=https://github.com/chatbus/chatbus_homepage/commits?author=jams777" /></td>
+    <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/issues?q=assignee%3Ajams777+is%3Aopen" title="Issue">Issue<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Ajams777+is%3Aopen" /></a></td>    
+    <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/pulls?q=is%3Apr+assignee%3Ajams777" title="Pull Requests">Pull Request<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Ajams777+is%3Aopen+is%3Apr" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/thgml21004"><img src="https://avatars.githubusercontent.com/u/56290407?v=4&s=100" width="100px;" alt=""/></a></td>
+    <td align="center"><sub><b>엘라</b></sub></td>
+    <td align="center">디자인 및 퍼블리싱<br />프론트 개발</td> 
+    <td align="center"><img src="http://img.shields.io/badge/-thgml21004-black?style=for-the-badge&logo=github&link=https://github.com/thgml21004" alt=""/></td>
+    <td align="center"><img src="https://img.shields.io/badge/-commit-black??style=for-the-badge&logo=github&link=https://github.com/chatbus/chatbus_homepage/commits?author=thgml21004" /></td>
+    <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/issues?q=assignee%3Athgml21004+is%3Aopen" title="Issue">Issue<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Athgml21004+is%3Aopen" /></a></td>    
+    <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/pulls?q=is%3Apr+assignee%3Athgml21004" title="Pull Requests">Pull Request<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Athgml21004+is%3Aopen+is%3Apr" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/CheonInJeong"><img src="https://avatars.githubusercontent.com/u/80233325?v=4&s=100" width="100px;" alt=""/></a></td>
+    <td align="center"><sub><b>첸첸</b></sub></td>
+    <td align="center">프론트 개발<br />테스트</td> 
+    <td align="center"><img src="http://img.shields.io/badge/-CheonInJeong-black?style=for-the-badge&logo=github&link=https://github.com/CheonInJeong" alt=""/></td>
+    <td align="center"><img src="https://img.shields.io/badge/-commit-black??style=for-the-badge&logo=github&link=https://github.com/chatbus/chatbus_homepage/commits?author=CheonInJeong" /></td>
+    <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/issues?q=assignee%3ACheonInJeong+is%3Aopen" title="Issue">Issue<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3ACheonInJeong+is%3Aopen" /></a></td>    
+    <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/pulls?q=is%3Apr+assignee%3ACheonInJeong" title="Pull Requests">Pull Request<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3ACheonInJeong+is%3Aopen+is%3Apr" /></a></td>
+  </tr>
+</table>
 
 
 ## LICENSE - 라이센스 
