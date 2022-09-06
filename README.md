@@ -1,8 +1,3 @@
-<style>
-.readme_avatar {
-  border-radius: 50%;
-}
-</style>
 <p align="center">
   <a href="https://chatbus.github.io">
     <img alt="chatbus" src="https://avatars.githubusercontent.com/u/110974823?s=100&v=4" width="100" />
