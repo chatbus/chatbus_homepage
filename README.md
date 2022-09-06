@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://chatbus.github.io">
-    <img alt="chatbus" src="https://avatars.githubusercontent.com/u/110974823?s=60&v=4" width="60" />
+    <img alt="chatbus" src="https://avatars.githubusercontent.com/u/110974823?s=100&v=4" width="100" />
   </a>
 </p>
 <h1 align="center">
@@ -22,9 +22,10 @@
 </a>
 </h1>
 
+
 ## 🧑‍💻 개발환경 셋팅하기
 
-1. **프로젝트 초기설정 with <img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=Yarn&logoColor=white" />** 방법
+1. **프로젝트 초기설정 with [<img src="https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=Yarn&logoColor=white" />](https://classic.yarnpkg.com/lang/en/)** 방법
 
     yarn 을 활용하여 프로젝트 초기 설정을 한다..<br />
     [Node.js](https://nodejs.org/) 16.17.0 이상과 yarn ( npm i -g yarn ) 이 필요하다.
@@ -34,7 +35,7 @@
     yarn install
     ```
 
-2. **프로젝트 초기설정 with <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white" />**
+2. **프로젝트 초기설정 with [<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=Docker&logoColor=white" />](https://www.docker.com/)**
    
     제공되는 도커 이미지를 활용하여 프로젝트 설정을 한다. <br />
     node.js 나 yarn을 설치할 필요없이 도커 환경만 구성되어 있다면 바로 환경구성을 할 수 있다.
@@ -52,7 +53,7 @@
 
 ## 🥳 홈페이지 배포하기
 
-1. **Github에서 제공하는 <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=GitHub%20Actions&logoColor=white" /> 활용**
+1. **Github에서 제공하는 [<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=GitHub%20Actions&logoColor=white" />](https://github.com/chatbus/chatbus_homepage/actions) 활용**
 
     Pull Request 를 해서 main 브랜치에 머지가 되면 자동으로 배포가 된다. <br />
     Actions는 [gatsby-gh-pages-action](https://github.com/enriikke/gatsby-gh-pages-action)을 사용했다. 
