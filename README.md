@@ -109,3 +109,10 @@
    [MIT](LICENSE)
 
 
+## 프로젝트 조회 수 추이
+
+![조회수 그래프](https://hits.seeyoufarm.com/api/count/graph/dailyhits.svg?url=https://github.com/chatbus/chatbus_homepage)
+
+
+
+
