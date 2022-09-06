@@ -95,7 +95,7 @@
     <td align="center"><a href="https://github.com/thgml21004"><img src="https://avatars.githubusercontent.com/u/56290407?v=4&s=100" width="100px;" alt=""/></a></td>
     <td align="center"><sub><b>엘라</b></sub></td>
     <td align="center">디자인 및 퍼블리싱<br />프론트 개발</td> 
-    <td align="center"><a href="link=https://github.com/thgml21004"><img src="http://img.shields.io/badge/-thgml21004-black?style=for-the-badge&logo=github" alt=""/></a></td>
+    <td align="center"><a href="https://github.com/thgml21004"><img src="http://img.shields.io/badge/-thgml21004-black?style=for-the-badge&logo=github" alt=""/></a></td>
     <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/commits?author=thgml21004"><img src="https://img.shields.io/badge/-commit-black??style=for-the-badge&logo=github" /></a></td>
     <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/issues?q=assignee%3Athgml21004+is%3Aopen" title="Issue">Issue<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Athgml21004+is%3Aopen" /></a></td>    
     <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/pulls?q=is%3Apr+assignee%3Athgml21004" title="Pull Requests">Pull Request<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3Athgml21004+is%3Aopen+is%3Apr" /></a></td>
@@ -105,7 +105,7 @@
     <td align="center"><sub><b>첸첸</b></sub></td>
     <td align="center">프론트 개발<br />테스트</td> 
     <td align="center"><a href="https://github.com/CheonInJeong"><img src="http://img.shields.io/badge/-CheonInJeong-black?style=for-the-badge&logo=github" alt=""/></a></td>
-    <td align="center"><a href="link=https://github.com/chatbus/chatbus_homepage/commits?author=CheonInJeong"><img src="https://img.shields.io/badge/-commit-black??style=for-the-badge&logo=github" /></a></td>
+    <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/commits?author=CheonInJeong"><img src="https://img.shields.io/badge/-commit-black??style=for-the-badge&logo=github" /></a></td>
     <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/issues?q=assignee%3ACheonInJeong+is%3Aopen" title="Issue">Issue<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3ACheonInJeong+is%3Aopen" /></a></td>    
     <td align="center"><a href="https://github.com/chatbus/chatbus_homepage/pulls?q=is%3Apr+assignee%3ACheonInJeong" title="Pull Requests">Pull Request<br /><img src="https://img.shields.io/github/issues-search/chatbus/chatbus_homepage?query=assignee%3ACheonInJeong+is%3Aopen+is%3Apr" /></a></td>
   </tr>
