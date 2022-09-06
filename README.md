@@ -9,6 +9,8 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fchatbus%2Fchatbus_homepage&count_bg=%2379C83D&title_bg=%231553B6&icon=&icon_color=%23E7E7E7&title=%EC%A1%B0%ED%9A%8C%EC%88%98&edge_flat=false)](https://hits.seeyoufarm.com)
 [![All Contributors](https://img.shields.io/badge/contributors-3-orange.svg?style=flat-square)](#Contributors)
 [![Star on GitHub](https://img.shields.io/github/stars/chatbus/chatbus_homepage.svg?style=social)](https://github.com/chatbus/chatbus_homepage/stargazers)
+[![GitHub license](https://img.shields.io/github/license/chatbus/chatbus_homepage.svg)](https://github.com/chatbus/chatbus_homepage/blob/main/LICENSE)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)]()
 
 <a href="https://github.com/chatbus/chatbus_homepage/actions">
   <img alt="Tests Passing" src="https://github.com/chatbus/chatbus_homepage/actions/workflows/main.yml/badge.svg" />  
