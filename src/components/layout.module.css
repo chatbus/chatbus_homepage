@@ -25,3 +25,8 @@
   font-weight: 700;
   margin: 3rem 0;
 }
+
+.single-faq {
+  visibility: visible;
+  animation-delay: 0.1s;
+}
