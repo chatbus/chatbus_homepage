@@ -1,8 +1,7 @@
 import * as React from "react";
-import Layout from "../components/layout";
+
 const FaqPage = () => {
-  return
-  // <Layout pageTitle="FAQ">
+  return (
     <div className="w-full text-center">
       <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">
         There are many variations of passages of Lorem Ipsum available
@@ -145,7 +144,7 @@ const FaqPage = () => {
         </div>
       </div>
     </div>
-  // </Layout>;
+  );
 };
 
 export default FaqPage;

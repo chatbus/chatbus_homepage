@@ -26,7 +26,7 @@ const Header = () => {
                                         <Link to="/" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
                                             <ContextConsumer>
                                                 {({ data, set }) => (
-                                                    <span onTouchStart={() => set({ pageTitle: '프로젝트 소개' })}>프로젝트 소개</span>
+                                                    <span onClick={() => set({ pageTitle: '프로젝트 소개' })}>프로젝트 소개</span>
                                                 )}
                                             </ContextConsumer>
                                         </Link>
@@ -35,7 +35,7 @@ const Header = () => {
                                         <Link to="/member" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
                                             <ContextConsumer>
                                                 {({ data, set }) => (
-                                                    <span onTouchStart={() => set({ pageTitle: '멤버 정보' })}>멤버 정보</span>
+                                                    <span onClick={() => set({ pageTitle: '멤버 정보' })}>멤버 정보</span>
                                                 )}
                                             </ContextConsumer>
                                         </Link>
@@ -44,7 +44,7 @@ const Header = () => {
                                         <Link to="/manual" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
                                             <ContextConsumer>
                                                 {({ data, set }) => (
-                                                    <span onTouchStart={() => set({ pageTitle: '메뉴얼' })}>메뉴얼</span>
+                                                    <span onClick={() => set({ pageTitle: '메뉴얼' })}>메뉴얼</span>
                                                 )}
                                             </ContextConsumer>
                                         </Link>
@@ -53,7 +53,7 @@ const Header = () => {
                                         <Link to="/faq" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
                                             <ContextConsumer>
                                                 {({ data, set }) => (
-                                                    <span onTouchStart={() => set({ pageTitle: 'FAQ' })}>FAQ</span>
+                                                    <span onClick={() => set({ pageTitle: 'FAQ' })}>FAQ</span>
                                                 )}
                                             </ContextConsumer>
                                         </Link>
