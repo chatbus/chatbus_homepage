@@ -10,9 +10,9 @@ const MemberPage = () => {
     { name: "첸첸(천인정)", desc: "프론트 개발 테스트" },
   ];
   return (
-    <Layout pageTitle="멤버 정보">
+    // <Layout pageTitle="멤버 정보">
       <MemberCard members={members} />
-    </Layout>
+    // </Layout>
   );
 };
 

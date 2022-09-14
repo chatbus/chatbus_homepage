@@ -5,7 +5,7 @@ import Navigator from "../components/navigator";
 const ManualPage = () => {
   const menu = ["중메뉴1", "중메뉴2", "중메뉴3"];
   return (
-    <Layout pageTitle="메뉴얼">
+    // <Layout pageTitle="메뉴얼">
         <div className="w-full">
             <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed text-center">
                 There are many variations of passages of Lorem Ipsum available
@@ -36,7 +36,7 @@ const ManualPage = () => {
                 </div>
             </div>
         </div>
-    </Layout>
+    // </Layout>
   );
 };
 

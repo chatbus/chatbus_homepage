@@ -15,5 +15,11 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`${__dirname}/src/components/layout`),
+      },
+    },
   ],
 };
