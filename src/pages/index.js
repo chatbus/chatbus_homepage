@@ -1,5 +1,4 @@
 import * as React from "react";
-import Layout from "../components/layout";
 
 const IndexPage = () => {
   
@@ -14,7 +13,6 @@ const IndexPage = () => {
   "💜╚═════════════════════════════════════════╝💖", 'color: yellow; background: black; font-size: 15px;');
   
   return (
-    <Layout pageTitle="프로젝트 소개">
         <div className="w-full text-center">
             <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">chatbus hompage hi</p>
             <div className="-mx-4 flex flex-wrap mt-[60px]">
@@ -33,7 +31,6 @@ const IndexPage = () => {
                 그래서 공격을 할 땐 공간을 넓혀야하니까 터치 라인으로 붙여서 상대의 선택지를 넓혀야한다는 겁니다.<br/>
             </div>
         </div>
-    </Layout>
   );
 };
 
