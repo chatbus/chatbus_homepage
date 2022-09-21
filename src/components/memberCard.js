@@ -1,14 +1,21 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image"
+import { motion } from "framer-motion";
 
 const MemberCard = ({ members }) => {
   return (
     <div className="w-full px-4 text-center">
+      <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.50 }}
+      >
       <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">CHATBUS의 멤버를 소개합니다.</p>
         <div className="-mx-4 flex flex-wrap justify-center mt-[60px]">
-            {members.map((member) => (
-            <div className="w-full px-4 sm:w-1/2 lg:w-1/4">
+            {members.map((member, i) => (
+            <div key={i} className="w-full px-4 sm:w-1/2 lg:w-1/4">
               <div className="wow fadeInUp mb-10">
                 <div className="h-150px w-[150px] relative z-10 mx-auto mb-6 rounded-full">
                   <StaticImage src="../images/user-donny.jpg" alt="멤버캐릭터" className="w-full rounded-full" />
@@ -150,6 +157,7 @@ const MemberCard = ({ members }) => {
             </div>
             ))}
         </div>
+      </motion.div>
     </div>
   );
 };

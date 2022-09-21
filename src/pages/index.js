@@ -1,19 +1,26 @@
 import * as React from "react";
+import { motion } from "framer-motion";
 
 const IndexPage = () => {
-  
-  console.log("%c" +
-  "💖╔═════════════════════════════════════════╗💜\n" +
-  "💘    ________          __  ____             🤎\n" +
-  "🧡   / ____/ /_  ____ _/ /_/ __ )__  _______ 💙\n" +
-  "💛  / /   / __ \\/ __ `/ __/ __  / / / / ___/ 💚\n" +
-  "💚 / /___/ / / / /_/ / /_/ /_/ / /_/ (__  )  💛\n" +
-  "💙 \\____/_/ /_/\\__,_/\\__/_____/\\__,_/____/   🧡\n"+
-  "🤎   ^_^  Welcome to ChatBus Console~  ^_^   💘\n"+
-  "💜╚═════════════════════════════════════════╝💖", 'color: yellow; background: black; font-size: 15px;');
-  
+
+    console.log("%c" +
+        "💖╔═════════════════════════════════════════╗💜\n" +
+        "💘    ________          __  ____             🤎\n" +
+        "🧡   / ____/ /_  ____ _/ /_/ __ )__  _______ 💙\n" +
+        "💛  / /   / __ \\/ __ `/ __/ __  / / / / ___/ 💚\n" +
+        "💚 / /___/ / / / /_/ / /_/ /_/ / /_/ (__  )  💛\n" +
+        "💙 \\____/_/ /_/\\__,_/\\__/_____/\\__,_/____/   🧡\n"+
+        "🤎   ^_^  Welcome to ChatBus Console~  ^_^   💘\n"+
+        "💜╚═════════════════════════════════════════╝💖", 'color: yellow; background: black; font-size: 15px;');
+
   return (
         <div className="w-full text-center">
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.50 }}
+            >
             <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">chatbus hompage hi</p>
             <div className="-mx-4 flex flex-wrap mt-[60px]">
                 필드는 아주 넓은데 그걸 최대한 효율적으로 이용하기 위해서는 때로는 간격을 좁혀야하고 때로는 다시 넓혀야합니다. 그러기 위해선 팀으로서의 기계적인 움직임이 일정 수준 이상으로 필요할 수밖에 없죠.<br/>
@@ -30,6 +37,7 @@ const IndexPage = () => {
                 그래서 수비를 할 땐 공간을 좁혀야하니까 측면으로 몰아붙여서 상대의 선택지를 줄여야한다는 거고.<br/>
                 그래서 공격을 할 땐 공간을 넓혀야하니까 터치 라인으로 붙여서 상대의 선택지를 넓혀야한다는 겁니다.<br/>
             </div>
+            </motion.div>
         </div>
   );
 };
