@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
                 <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-8/12 xl:w-9/12">
                     <h4 className="mb-3 text-lg font-semibold text-white">License</h4>
-                    <p className="mb-9 text-base font-normal text-white">git hub : <Link to="https://github.com/chatbus" className="hover:underline">https://github.com/chatbus</Link></p>
+                    <p className="mb-9 text-base font-normal text-white">git hub : <a href="https://github.com/chatbus" className="hover:underline" target="_blank" rel="noreferrer">https://github.com/chatbus</a></p>
                 </div>
             </div>
         </div>
