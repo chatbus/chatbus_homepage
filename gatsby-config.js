@@ -13,6 +13,13 @@ module.exports = {
         path: `${__dirname}/blog`,
       }
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `member`,
+        path: `${__dirname}/data/member`,
+      },
+    },
     "gatsby-plugin-mdx",
     "gatsby-transformer-sharp",
   ],
