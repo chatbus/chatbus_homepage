@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import ContextConsumer from "./pageTitleContext"
 
 const Header = () => {
     return (
@@ -22,16 +23,40 @@ const Header = () => {
                             <nav className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6">
                                 <ul className="blcok lg:flex">
                                     <li className="group relative">
-                                        <Link to="/" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >프로젝트 소개</Link>
+                                        <Link to="/" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
+                                            <ContextConsumer>
+                                                {({ data, set }) => (
+                                                    <span onClick={() => set({ pageTitle: '프로젝트 소개' })}>프로젝트 소개</span>
+                                                )}
+                                            </ContextConsumer>
+                                        </Link>
                                     </li>
                                     <li className="group relative">
-                                        <Link to="/member" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >멤버 정보</Link>
+                                        <Link to="/member" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
+                                            <ContextConsumer>
+                                                {({ data, set }) => (
+                                                    <span onClick={() => set({ pageTitle: '멤버 정보' })}>멤버 정보</span>
+                                                )}
+                                            </ContextConsumer>
+                                        </Link>
                                     </li>
                                     <li className="group relative">
-                                        <Link to="/manual" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >메뉴얼</Link>
+                                        <Link to="/manual" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
+                                            <ContextConsumer>
+                                                {({ data, set }) => (
+                                                    <span onClick={() => set({ pageTitle: '메뉴얼' })}>메뉴얼</span>
+                                                )}
+                                            </ContextConsumer>
+                                        </Link>
                                     </li>
                                     <li className="group relative">
-                                        <Link to="/faq" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >FAQ</Link>
+                                        <Link to="/faq" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
+                                            <ContextConsumer>
+                                                {({ data, set }) => (
+                                                    <span onClick={() => set({ pageTitle: 'FAQ' })}>FAQ</span>
+                                                )}
+                                            </ContextConsumer>
+                                        </Link>
                                     </li>
                                 </ul>
                             </nav>

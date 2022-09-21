@@ -2,6 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import {graphql} from "gatsby";
 import FaqCard from "../components/faqCard";
+
 const FaqPage = ( {data} ) => {
   const faqs = data.allMdx.nodes;
   return <Layout pageTitle="FAQ">
