@@ -3,6 +3,7 @@ import Header from "./header";
 import Footer from "./footer";
 import { ContextProviderComponent } from "./pageTitleContext"
 import ContextConsumer from "./pageTitleContext"
+import { AnimatePresence } from "framer-motion";
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -23,7 +24,9 @@ const Layout = ({ pageTitle, children }) => {
                   </h1>
               </div>
               <div className="-mx-4 flex flex-wrap items-center">
+                  <AnimatePresence mode={"wait"}>
                   {children}
+                  </AnimatePresence>
               </div>
           </div>
       </main>
