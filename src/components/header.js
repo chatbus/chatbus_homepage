@@ -35,7 +35,7 @@ const Header = () => {
                                         <Link to="/member" className="ud-menu-scroll mx-8 flex py-2 text-lg text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70" >
                                             <ContextConsumer>
                                                 {({ data, set }) => (
-                                                    <span onClick={() => set({ pageTitle: '멤버 정보' })}>멤버 정보</span>
+                                                    <span onClick={() => set({ pageTitle: '멤버 소개' })}>멤버 소개</span>
                                                 )}
                                             </ContextConsumer>
                                         </Link>

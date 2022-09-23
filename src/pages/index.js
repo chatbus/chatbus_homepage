@@ -21,6 +21,7 @@ const IndexPage = () => {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.50 }}
             >
+            <h2 className="mb-8 text-3xl font-bold leading-snug text-dark sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug md:pt-[50px] lg:pt-[100px]">프로젝트 소개</h2>
             <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">chatbus hompage hi</p>
             <div className="-mx-4 flex flex-wrap mt-[60px]">
                 필드는 아주 넓은데 그걸 최대한 효율적으로 이용하기 위해서는 때로는 간격을 좁혀야하고 때로는 다시 넓혀야합니다. 그러기 위해선 팀으로서의 기계적인 움직임이 일정 수준 이상으로 필요할 수밖에 없죠.<br/>
