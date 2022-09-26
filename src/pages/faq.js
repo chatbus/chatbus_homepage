@@ -5,15 +5,13 @@ import FaqCard from "../components/faqCard";
 
 const FaqPage = ( {data} ) => {
   const faqs = data.allMdx.nodes;
-  return <Layout pageTitle="FAQ">
-    <div className="w-full text-center">
-      <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">
-        There are many variations of passages of Lorem Ipsum available
-        but the majority have suffered alteration in some form.
-      </p>
-      <FaqCard faqs={faqs}/>
-    </div>
-  </Layout>;
+  return <div className="w-full text-center">
+          <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">
+            There are many variations of passages of Lorem Ipsum available
+            but the majority have suffered alteration in some form.
+          </p>
+          <FaqCard faqs={faqs}/>
+        </div>
 };
 
 export const query = graphql`
