@@ -12,7 +12,6 @@ export const query = graphql`
   query {
     allMdx(filter: {frontmatter: {slug: {eq: "member"}}}) {
     nodes {
-      id
       frontmatter {
         name
         github
@@ -25,6 +24,7 @@ export const query = graphql`
         }
         hero_image_alt
         projects
+        status
       }
       excerpt
     }

@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -8,8 +7,9 @@ const MemberCard = ({ members }) => {
     <div className="w-full px-4 text-center">
       <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">CHATBUS의 멤버를 소개합니다.</p>
         <div className="-mx-4 flex flex-wrap justify-center mt-[60px]">
-            {members.map((member) => (
-            <div className="w-full px-4 sm:w-1/2 lg:w-1/4" key={member.id}>
+            {members.map((member,index) => (
+                member.frontmatter.status === "active" ?
+                    (<div className="w-full px-4 sm:w-1/2 lg:w-1/4" key={index}>
               <div className="wow fadeInUp mb-10">
                 <div className="h-150px w-[150px] relative z-10 mx-auto mb-6 rounded-full">
                   <GatsbyImage image={getImage(member.frontmatter.hero_image)} alt={member.frontmatter.hero_image_alt} className="w-full rounded-full" />
@@ -163,7 +163,7 @@ const MemberCard = ({ members }) => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>) : ""
             ))}
         </div>
     </div>
