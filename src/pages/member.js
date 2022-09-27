@@ -1,16 +1,34 @@
 import * as React from "react";
 import MemberCard from "../components/memberCard";
+import { graphql } from 'gatsby';
 
-const MemberPage = () => {
-  const members = [
-    { name: "도니(서지암)", desc: "환경구성 프로젝트 관리" },
-    { name: "엘라(박소희)", desc: "디자인 및 퍼블리싱 프론트 개발" },
-    // { name: "우솝(김건위)", desc: "프론트 개발 테스트" },
-    { name: "첸첸(천인정)", desc: "프론트 개발 테스트" },
-  ];
+const MemberPage = ({data}) => {
+  const members = data.allMdx.nodes;
   return (
       <MemberCard members={members} />
   );
 };
+export const query = graphql`
+  query {
+    allMdx(filter: {frontmatter: {slug: {eq: "member"}}}) {
+    nodes {
+      frontmatter {
+        name
+        github
+        homepage
+        linkdin
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+        hero_image_alt
+        projects
+        status
+      }
+      excerpt
+    }
+  }
+  }`
 
 export default MemberPage;
