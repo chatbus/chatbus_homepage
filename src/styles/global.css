@@ -7,6 +7,9 @@
 body {
     font-family: "Inter", sans-serif;
 }
+.header {
+    @apply fixed
+}
 
 .sticky {
     @apply fixed z-[9999] bg-white bg-opacity-80 transition;
