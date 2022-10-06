@@ -2,7 +2,7 @@ import * as React from "react";
 import { graphql } from 'gatsby';
 import { motion } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const IndexPage = ({data}) => {
     const title = data.mdx.frontmatter.title;
@@ -13,28 +13,32 @@ const IndexPage = ({data}) => {
     const [isscroll1200Set, setisscroll1200Set] = useState();
     const [isscroll1800Set, setisscroll1800Set] = useState();
 
+    // const handlescroll = () => {
+    //     // console.log(window.pageYOffset);
+    //     // console.log('높이', window.pageYOffset / document.body.offsetHeight * 100); // 퍼센트 높이 구하기
+    // };
+    //
+    // window.addEventListener('scroll', handlescroll);
 
-    const handlescroll = () => {
-        // console.log(window.pageYOffset);
-        // console.log('높이', window.pageYOffset / document.body.offsetHeight * 100); // 퍼센트 높이 구하기
+    useEffect(()=> {
+        window.addEventListener("scroll", () => {
 
-        setOffSet(window.pageYOffset);
+            setOffSet(window.pageYOffset);
 
-        if (window.pageYOffset >= 600) {
-            setisscroll600Set(window.pageYOffset / document.body.offsetHeight);
-            setisscroll1200Set(window.pageYOffset / (document.body.offsetHeight - 1200));
-            setisscroll1800Set(window.pageYOffset / (document.body.offsetHeight - 1800));
-            // console.log('600:', window.pageYOffset / document.body.offsetHeight);
-            // console.log('1200:', window.pageYOffset / (document.body.offsetHeight - 1200));
-            // console.log('1800:', window.pageYOffset / (document.body.offsetHeight - 1800));
-        } else {
-            setisscroll600Set(false);
-            setisscroll1200Set(false);
-            setisscroll1800Set(false);
-        }
-    };
-
-    window.addEventListener('scroll', handlescroll);
+            if (window.pageYOffset >= 600) {
+                setisscroll600Set(window.pageYOffset / document.body.offsetHeight);
+                setisscroll1200Set(window.pageYOffset / (document.body.offsetHeight - 1200));
+                setisscroll1800Set(window.pageYOffset / (document.body.offsetHeight - 1800));
+                // console.log('600:', window.pageYOffset / document.body.offsetHeight);
+                // console.log('1200:', window.pageYOffset / (document.body.offsetHeight - 1200));
+                // console.log('1800:', window.pageYOffset / (document.body.offsetHeight - 1800));
+            } else {
+                setisscroll600Set(false);
+                setisscroll1200Set(false);
+                setisscroll1800Set(false);
+            }
+        });
+    }) ;
 
    console.log("%c" +
         "💖╔═════════════════════════════════════════╗💜\n" +
