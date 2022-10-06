@@ -15,7 +15,7 @@ const IndexPage = ({data}) => {
 
 
     const handlescroll = () => {
-        console.log(window.pageYOffset);
+        // console.log(window.pageYOffset);
         // console.log('높이', window.pageYOffset / document.body.offsetHeight * 100); // 퍼센트 높이 구하기
 
         setOffSet(window.pageYOffset);
@@ -24,9 +24,9 @@ const IndexPage = ({data}) => {
             setisscroll600Set(window.pageYOffset / document.body.offsetHeight);
             setisscroll1200Set(window.pageYOffset / (document.body.offsetHeight - 1200));
             setisscroll1800Set(window.pageYOffset / (document.body.offsetHeight - 1800));
-            console.log('600:', window.pageYOffset / document.body.offsetHeight);
-            console.log('1200:', window.pageYOffset / (document.body.offsetHeight - 1200));
-            console.log('1800:', window.pageYOffset / (document.body.offsetHeight - 1800));
+            // console.log('600:', window.pageYOffset / document.body.offsetHeight);
+            // console.log('1200:', window.pageYOffset / (document.body.offsetHeight - 1200));
+            // console.log('1800:', window.pageYOffset / (document.body.offsetHeight - 1800));
         } else {
             setisscroll600Set(false);
             setisscroll1200Set(false);
@@ -36,15 +36,15 @@ const IndexPage = ({data}) => {
 
     window.addEventListener('scroll', handlescroll);
 
-   // console.log("%c" +
-   //      "💖╔═════════════════════════════════════════╗💜\n" +
-   //      "💘    ________          __  ____             🤎\n" +
-   //      "🧡   / ____/ /_  ____ _/ /_/ __ )__  _______ 💙\n" +
-   //      "💛  / /   / __ \\/ __ `/ __/ __  / / / / ___/ 💚\n" +
-   //      "💚 / /___/ / / / /_/ / /_/ /_/ / /_/ (__  )  💛\n" +
-   //      "💙 \\____/_/ /_/\\__,_/\\__/_____/\\__,_/____/   🧡\n"+
-   //      "🤎   ^_^  Welcome to ChatBus Console~  ^_^   💘\n"+
-   //      "💜╚═════════════════════════════════════════╝💖", 'color: yellow; background: black; font-size: 15px;');
+   console.log("%c" +
+        "💖╔═════════════════════════════════════════╗💜\n" +
+        "💘    ________          __  ____             🤎\n" +
+        "🧡   / ____/ /_  ____ _/ /_/ __ )__  _______ 💙\n" +
+        "💛  / /   / __ \\/ __ `/ __/ __  / / / / ___/ 💚\n" +
+        "💚 / /___/ / / / /_/ / /_/ /_/ / /_/ (__  )  💛\n" +
+        "💙 \\____/_/ /_/\\__,_/\\__/_____/\\__,_/____/   🧡\n"+
+        "🤎   ^_^  Welcome to ChatBus Console~  ^_^   💘\n"+
+        "💜╚═════════════════════════════════════════╝💖", 'color: yellow; background: black; font-size: 15px;');
 
   return (
         <div className="w-full text-center">
