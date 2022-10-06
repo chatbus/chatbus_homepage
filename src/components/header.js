@@ -5,7 +5,7 @@ import ContextConsumer from "./pageTitleContext"
 
 const Header = () => {
     return (
-        <div className="ud-header absolute bg-primary top-0 left-0 z-40 flex w-full items-center">
+        <div className="ud-header absolute bg-primary top-0 left-0 z-40 flex w-full items-center header">
             <div className="container">
                 <div className="relative -mx-4 flex items-center justify-between">
                     <div className="w-40 max-w-full px-4">
