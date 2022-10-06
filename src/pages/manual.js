@@ -5,7 +5,7 @@ import Navigator from "../components/navigator";
 const ManualPage = () => {
   const menu = ["중메뉴1", "중메뉴2", "중메뉴3"];
   return (
-        <div className="w-full">
+        <div className="w-full container">
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

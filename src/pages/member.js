@@ -5,7 +5,9 @@ import { graphql } from 'gatsby';
 const MemberPage = ({data}) => {
   const members = data.allMdx.nodes;
   return (
-      <MemberCard members={members} />
+      <div className="container">
+        <MemberCard members={members} />
+      </div>
   );
 };
 export const query = graphql`
