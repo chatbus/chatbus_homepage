@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const FaqPage = ({data}) => {
   const faqs = data.allMdx.nodes;
   return (
-    <div className="w-full text-center">
+    <div className="w-full text-center container">
       <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
