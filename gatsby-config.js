@@ -20,12 +20,6 @@ module.exports = {
     "gatsby-plugin-image",
     "gatsby-plugin-styled-components",
     {
-      resolve: `gatsby-plugin-layout`,
-      options: {
-        component: require.resolve(`${__dirname}/src/components/layout`),
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: `member`,
