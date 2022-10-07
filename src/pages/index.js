@@ -23,20 +23,23 @@ const IndexPage = ({data}) => {
     useEffect(()=> {
         window.addEventListener("scroll", () => {
 
-            setOffSet(window.pageYOffset);
+            if ( !isNaN(window.pageYOffset) ) {
+                setOffSet(window.pageYOffset);
 
-            if (window.pageYOffset >= 600) {
-                setisscroll600Set(window.pageYOffset / document.body.offsetHeight);
-                setisscroll1200Set(window.pageYOffset / (document.body.offsetHeight - 1200));
-                setisscroll1800Set(window.pageYOffset / (document.body.offsetHeight - 1800));
-                // console.log('600:', window.pageYOffset / document.body.offsetHeight);
-                // console.log('1200:', window.pageYOffset / (document.body.offsetHeight - 1200));
-                // console.log('1800:', window.pageYOffset / (document.body.offsetHeight - 1800));
-            } else {
-                setisscroll600Set(false);
-                setisscroll1200Set(false);
-                setisscroll1800Set(false);
+                if (window.pageYOffset >= 600) {
+                    setisscroll600Set(window.pageYOffset / document.body.offsetHeight);
+                    setisscroll1200Set(window.pageYOffset / (document.body.offsetHeight - 1200));
+                    setisscroll1800Set(window.pageYOffset / (document.body.offsetHeight - 1800));
+                    // console.log('600:', window.pageYOffset / document.body.offsetHeight);
+                    // console.log('1200:', window.pageYOffset / (document.body.offsetHeight - 1200));
+                    // console.log('1800:', window.pageYOffset / (document.body.offsetHeight - 1800));
+                } else {
+                    setisscroll600Set(false);
+                    setisscroll1200Set(false);
+                    setisscroll1800Set(false);
+                }
             }
+
         });
     }) ;
 
@@ -85,33 +88,33 @@ const IndexPage = ({data}) => {
                     {/*    <StaticImage src="../images/parallax/bus-top.png" />*/}
                     {/*</div>*/}
                     <div className="ani_road_straight">
-                        <StaticImage src="../images/parallax/road-extender.svg" />
+                        <StaticImage alt="road-extender" src="../images/parallax/road-extender.svg" />
                     </div>
                     <div className="ani_road">
-                        <StaticImage src="../images/parallax/windy-road.svg" />
+                        <StaticImage alt="windy-road" src="../images/parallax/windy-road.svg" />
                     </div>
-                    <div className="ani_bus" id="bus" style={{'offset-distance': offSet * 1.4}}>
-                        <StaticImage src="../images/parallax/bus-top.png" />
+                    <div className="ani_bus" id="bus" style={{ offsetDistance: (offSet?offSet:0) * 1.4}}>
+                        <StaticImage alt="bus-top" src="../images/parallax/bus-top.png" />
                     </div>
 
                     <div className="object-wrap">
                         <div className="object left">
-                            <div className="img" style={{opacity: isscroll600Set + 0.2 * 3.8}}>
-                                <StaticImage src="../images/parallax/img-mes.png" />
+                            <div className="img" style={{opacity: (isscroll600Set?isscroll600Set:0) + 0.2 * 3.8}}>
+                                <StaticImage alt="img-mes" src="../images/parallax/img-mes.png" />
                             </div>
                             <p className="tit">문자</p>
                             <p>대화</p>
                         </div>
                         <div className="object right">
-                            <div className="img" style={{opacity: isscroll1200Set * 2.4}}>
-                                <StaticImage src="../images/parallax/img-voice.png" />
+                            <div className="img" style={{opacity: (isscroll1200Set?isscroll1200Set:0) * 2.4}}>
+                                <StaticImage alt="img-voice" src="../images/parallax/img-voice.png" />
                             </div>
                             <p className="tit">음성</p>
                             <p>TTS/STT</p>
                         </div>
                         <div className="object left">
-                            <div className="img" style={{opacity: isscroll1800Set * 1.6}}>
-                                <StaticImage src="../images/parallax/img-file.png" />
+                            <div className="img" style={{opacity: (isscroll1800Set?isscroll1800Set:0) * 1.6}}>
+                                <StaticImage alt="img-file" src="../images/parallax/img-file.png" />
                             </div>
                             <p className="tit">파일</p>
                             <p>이미지, pdf</p>
