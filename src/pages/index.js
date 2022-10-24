@@ -1,49 +1,20 @@
 import * as React from "react";
 import { graphql } from 'gatsby';
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
-import { useEffect, useState } from "react"
 
 const IndexPage = ({data}) => {
     const title = data.mdx.frontmatter.title;
     const excerpt = data.mdx.excerpt;
 
-    const [offSet, setOffSet] = useState();
-    const [isscroll600Set, setisscroll600Set] = useState();
-    const [isscroll1200Set, setisscroll1200Set] = useState();
-    const [isscroll1800Set, setisscroll1800Set] = useState();
+    const { scrollYProgress } = useScroll();
+    // const pathLength = useSpring(scrollYProgress, { stiffness: 400, damping: 90 });
+    const offsetDistance = useTransform(scrollYProgress, [0, 1], ['10%', '100%']);
+    const isscroll600Set = useTransform(scrollYProgress, [0, 0.15, 0.3, 1], [0, 0, 1, 1]);
+    const isscroll1200Set = useTransform(scrollYProgress, [0, 0.32, 0.45, 1], [0, 0, 1, 1]);
+    const isscroll1800Set = useTransform(scrollYProgress, [0, 0.52, 0.62, 1], [0, 0, 1, 1]);
 
-    // const handlescroll = () => {
-    //     // console.log(window.pageYOffset);
-    //     // console.log('높이', window.pageYOffset / document.body.offsetHeight * 100); // 퍼센트 높이 구하기
-    // };
-    //
-    // window.addEventListener('scroll', handlescroll);
-
-    useEffect(()=> {
-        window.addEventListener("scroll", () => {
-
-            if ( !isNaN(window.pageYOffset) ) {
-                setOffSet(window.pageYOffset);
-
-                if (window.pageYOffset >= 600) {
-                    setisscroll600Set(window.pageYOffset / document.body.offsetHeight);
-                    setisscroll1200Set(window.pageYOffset / (document.body.offsetHeight - 1200));
-                    setisscroll1800Set(window.pageYOffset / (document.body.offsetHeight - 1800));
-                    // console.log('600:', window.pageYOffset / document.body.offsetHeight);
-                    // console.log('1200:', window.pageYOffset / (document.body.offsetHeight - 1200));
-                    // console.log('1800:', window.pageYOffset / (document.body.offsetHeight - 1800));
-                } else {
-                    setisscroll600Set(false);
-                    setisscroll1200Set(false);
-                    setisscroll1800Set(false);
-                }
-            }
-
-        });
-    }) ;
-
-   console.log("%c" +
+    console.log("%c" +
         "💖╔═════════════════════════════════════════╗💜\n" +
         "💘    ________          __  ____             🤎\n" +
         "🧡   / ____/ /_  ____ _/ /_/ __ )__  _______ 💙\n" +
@@ -93,32 +64,32 @@ const IndexPage = ({data}) => {
                     <div className="ani_road">
                         <StaticImage alt="windy-road" src="../images/parallax/windy-road.svg" />
                     </div>
-                    <div className="ani_bus" id="bus" style={{ offsetDistance: (offSet?offSet:0) * 1.4}}>
+                    <motion.div className="ani_bus" id="bus" style={{ offsetDistance }}>
                         <StaticImage alt="bus-top" src="../images/parallax/bus-top.png" />
-                    </div>
+                    </motion.div>
 
                     <div className="object-wrap">
-                        <div className="object left">
-                            <div className="img" style={{opacity: (isscroll600Set?isscroll600Set:0) + 0.2 * 3.8}}>
+                        <motion.div className="object left" style={{opacity: isscroll600Set}}>
+                            <div className="img">
                                 <StaticImage alt="img-mes" src="../images/parallax/img-mes.png" />
                             </div>
                             <p className="tit">문자</p>
                             <p>대화</p>
-                        </div>
-                        <div className="object right">
-                            <div className="img" style={{opacity: (isscroll1200Set?isscroll1200Set:0) * 2.4}}>
+                        </motion.div>
+                        <motion.div className="object right" style={{opacity: isscroll1200Set}}>
+                            <div className="img">
                                 <StaticImage alt="img-voice" src="../images/parallax/img-voice.png" />
                             </div>
                             <p className="tit">음성</p>
                             <p>TTS/STT</p>
-                        </div>
-                        <div className="object left">
-                            <div className="img" style={{opacity: (isscroll1800Set?isscroll1800Set:0) * 1.6}}>
+                        </motion.div>
+                        <motion.div className="object left" style={{opacity: isscroll1800Set}}>
+                            <div className="img">
                                 <StaticImage alt="img-file" src="../images/parallax/img-file.png" />
                             </div>
                             <p className="tit">파일</p>
                             <p>이미지, pdf</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
