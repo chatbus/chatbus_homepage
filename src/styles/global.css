@@ -172,3 +172,94 @@ body {
         transform: scale(0.8);
     }
 }
+
+@media (max-width: 840px) {
+    .ani_bus {
+        position: absolute;
+        top: 0;
+        /*left: 820px*/
+        z-index: 1;
+        transform: rotate(-90deg);
+        offset-path: path('M974.9,47l-166.3,0.7c0,0-218.5-26.9-395.3,109.5c0,0-113.8,76.6-143.4,201.4c0,0-43,122.6,67.1,250.9l103.8,117.7c0,0,93.1,103.5,22.4,226.3l-134.5,212.4c0,0-107.7,135-40.6,260.6l148.7,232.4c0,0,87.6,127.6-2.4,257.8l-146.3,233.4c0,0-58,130.9,25.6,231.4l110.3,172c0,0,116,132.3-6.7,304.6l-124.5,197c0,0-72.5,100.9,19.4,233.8l114,180.4c0,0,123.1,166.2,22.1,282.6L34.2,4181.5');
+        offset-distance: 0%;
+        /*animation: aniBus 10s linear alternate infinite;*/
+        transform-origin: center;
+        transition: 0.6s all ease;
+    }
+    .ani_bus img {
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .ani_bus {
+        position: absolute;
+        top: 0;
+        /*left: 820px*/
+        z-index: 1;
+        transform: rotate(-90deg);
+        offset-path: path('M974.9,47l-166.3,0.7c0,0-218.5-26.9-395.3,109.5c0,0-113.8,76.6-143.4,201.4c0,0-43,122.6,67.1,250.9l103.8,117.7c0,0,93.1,103.5,22.4,226.3l-134.5,212.4c0,0-107.7,135-40.6,260.6l148.7,232.4c0,0,87.6,127.6-2.4,257.8l-146.3,233.4c0,0-58,130.9,25.6,231.4l110.3,172c0,0,116,132.3-6.7,304.6l-124.5,197c0,0-72.5,100.9,19.4,233.8l114,180.4c0,0,123.1,166.2,22.1,282.6L34.2,4181.5');
+        offset-distance: 0%;
+        /*animation: aniBus 10s linear alternate infinite;*/
+        transform-origin: center;
+        transition: 0.6s all ease;
+    }
+    .ani_bus img {
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 680px) {
+    .ani_bus {
+        position: absolute;
+        top: 0;
+        /*left: 820px*/
+        z-index: 1;
+        transform: rotate(-90deg);
+        offset-path: path('M974.9,47l-166.3,0.7c0,0-218.5-26.9-395.3,109.5c0,0-113.8,76.6-143.4,201.4c0,0-43,122.6,67.1,250.9l103.8,117.7c0,0,93.1,103.5,22.4,226.3l-134.5,212.4c0,0-107.7,135-40.6,260.6l148.7,232.4c0,0,87.6,127.6-2.4,257.8l-146.3,233.4c0,0-58,130.9,25.6,231.4l110.3,172c0,0,116,132.3-6.7,304.6l-124.5,197c0,0-72.5,100.9,19.4,233.8l114,180.4c0,0,123.1,166.2,22.1,282.6L34.2,4181.5');
+        offset-distance: 0%;
+        /*animation: aniBus 10s linear alternate infinite;*/
+        transform-origin: center;
+        transition: 0.6s all ease;
+    }
+    .ani_bus img {
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .ani_bus {
+        position: absolute;
+        top: 0;
+        /*left: 820px*/
+        z-index: 1;
+        transform: rotate(-90deg);
+        offset-path: path('M974.9,47l-166.3,0.7c0,0-218.5-26.9-395.3,109.5c0,0-113.8,76.6-143.4,201.4c0,0-43,122.6,67.1,250.9l103.8,117.7c0,0,93.1,103.5,22.4,226.3l-134.5,212.4c0,0-107.7,135-40.6,260.6l148.7,232.4c0,0,87.6,127.6-2.4,257.8l-146.3,233.4c0,0-58,130.9,25.6,231.4l110.3,172c0,0,116,132.3-6.7,304.6l-124.5,197c0,0-72.5,100.9,19.4,233.8l114,180.4c0,0,123.1,166.2,22.1,282.6L34.2,4181.5');
+        offset-distance: 0%;
+        /*animation: aniBus 10s linear alternate infinite;*/
+        transform-origin: center;
+        transition: 0.6s all ease;
+    }
+    .ani_bus img {
+        height: 220px !important;
+    }
+}
+
+@media (max-width: 362px) {
+    .ani_bus {
+        position: absolute;
+        top: 0;
+        /*left: 820px*/
+        z-index: 1;
+        transform: rotate(-90deg);
+        offset-path: path('M974.9,47l-166.3,0.7c0,0-218.5-26.9-395.3,109.5c0,0-113.8,76.6-143.4,201.4c0,0-43,122.6,67.1,250.9l103.8,117.7c0,0,93.1,103.5,22.4,226.3l-134.5,212.4c0,0-107.7,135-40.6,260.6l148.7,232.4c0,0,87.6,127.6-2.4,257.8l-146.3,233.4c0,0-58,130.9,25.6,231.4l110.3,172c0,0,116,132.3-6.7,304.6l-124.5,197c0,0-72.5,100.9,19.4,233.8l114,180.4c0,0,123.1,166.2,22.1,282.6L34.2,4181.5');
+        offset-distance: 0%;
+        /*animation: aniBus 10s linear alternate infinite;*/
+        transform-origin: center;
+        transition: 0.6s all ease;
+        width: 50px;
+    }
+    .ani_bus img {
+        height: 220px !important;
+    }
+}
