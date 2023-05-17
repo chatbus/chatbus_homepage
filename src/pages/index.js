@@ -11,8 +11,8 @@ const IndexPage = ({data}) => {
     // const pathLength = useSpring(scrollYProgress, { stiffness: 400, damping: 90 });
     const offsetDistance = useTransform(scrollYProgress, [0, 1], ['10%', '100%']);
     const isscroll600Set = useTransform(scrollYProgress, [0, 0.15, 0.3, 1], [0, 0, 1, 1]);
-    const isscroll1200Set = useTransform(scrollYProgress, [0, 0.32, 0.45, 1], [0, 0, 1, 1]);
-    const isscroll1800Set = useTransform(scrollYProgress, [0, 0.52, 0.62, 1], [0, 0, 1, 1]);
+    const isscroll1200Set = useTransform(scrollYProgress, [0, 0.27, 0.42, 1], [0, 0, 1, 1]);
+    const isscroll1800Set = useTransform(scrollYProgress, [0, 0.39, 0.5, 1], [0, 0, 1, 1]);
 
     console.log("%c" +
         "💖╔═════════════════════════════════════════╗💜\n" +
@@ -36,7 +36,7 @@ const IndexPage = ({data}) => {
                 <h2 className="mb-8 text-3xl font-bold leading-snug text-dark sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug pt-[100px]">프로젝트 소개</h2>
                 <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">{title}</p>
 
-                <div className="-mx-4 flex flex-wrap mt-[60px] mb-[50px]">
+                <div className="mt-[60px] mb-[50px]">
                     {excerpt}
                 </div>
             </div>
