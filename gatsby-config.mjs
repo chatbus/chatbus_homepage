@@ -1,4 +1,10 @@
-module.exports = {
+import remarkGfm from "remark-gfm"
+import { dirname } from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
+const config = {
   siteMetadata: {
     title: "Chatbus Homepage",
     siteUrl: "https://chatbus.github.io",
@@ -22,6 +28,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: `pages`,
+        path: `${__dirname}/data/pages`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: `member`,
         path: `${__dirname}/data/member`,
       },
@@ -36,17 +49,27 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `faq`,
+        name: `manual`,
         path: `${__dirname}/data/manual`,
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-plugin-mdx`,
       options: {
-        name: `data`,
-        path: `${__dirname}/data`,
+        mdxOptions: {
+          remarkPlugins: [remarkGfm],
+        },
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 690,
+            },
+          },
+        ],
       },
     },
-    "gatsby-plugin-mdx",
   ],
-};
+}
+
+export default config

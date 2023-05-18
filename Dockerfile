@@ -1,8 +1,8 @@
 # base image ubuntu
-FROM node:16.17.0 as build
+FROM node:18.16.0 as build
 
 ENV NPM_CONFIG_LOGLEVEL debug
-ENV NODE_VERSION 16.17.0
+ENV NODE_VERSION 18.16.0
 ENV NODE_ENV production
 
 # yarn install
