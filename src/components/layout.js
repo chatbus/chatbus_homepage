@@ -4,7 +4,7 @@ import Footer from "./footer";
 import { ContextProviderComponent } from "./pageTitleContext"
 import { AnimatePresence } from "framer-motion";
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
   return (
     <ContextProviderComponent>
       <Header />
@@ -32,4 +32,3 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
