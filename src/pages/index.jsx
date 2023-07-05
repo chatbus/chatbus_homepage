@@ -2,11 +2,10 @@ import * as React from "react";
 import { graphql } from 'gatsby';
 import { motion, useScroll, useTransform } from "framer-motion";
 import { StaticImage } from "gatsby-plugin-image";
-import Index from "../../data/pages/index.mdx"
 
 const IndexPage = ({data}) => {
-    const title = data.mdx.frontmatter.title;
-    const excerpt = data.mdx.excerpt;
+    // const title = data.mdx.frontmatter.title;
+    // const excerpt = data.mdx.excerpt;
 
     const { scrollYProgress } = useScroll();
     // const pathLength = useSpring(scrollYProgress, { stiffness: 400, damping: 90 });
@@ -34,13 +33,13 @@ const IndexPage = ({data}) => {
                 transition={{ duration: 0.50 }}
             >
                 <div className="container-inner">
-                    <h2 className="mb-8 text-3xl font-bold leading-snug text-dark sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug pt-[100px]">프로젝트 소개</h2>
-                    <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">{title}</p>
+                    <h2 className="mb-8 text-3xl font-bold leading-snug text-dark sm:text-4xl sm:leading-snug md:text-[45px] md:leading-snug pt-[50px]">프로젝트 소개</h2>
+                    <p className="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">챗버스 프로젝트를 소개합니다.</p>
 
                     <div className="mt-[60px] mb-[50px]">
-                        <Index />
-                        <br />
-                        {excerpt}
+                        * 챗은 둘 또는 여러사람이 온/오픈라인 대화를 포함하며, 문자/음성/파일 등을 포함할 수 있다.<br/>
+                        * 버스는 컴퓨터간의 데이터와 정보를 전송하는 통신시스템이다.<br/>
+                        * 두개의 합성어로 <b>대화를 연결하는</b> 통신 시스템을 뜻한다.
                     </div>
                 </div>
                 <div className="parallax-wrap pt-[100px] pb-[100px]">
@@ -68,7 +67,7 @@ const IndexPage = ({data}) => {
                             <StaticImage alt="windy-road" src="../images/parallax/windy-road.svg" />
                         </div>
                         <motion.div className="ani_bus" id="bus" style={{ offsetDistance }}>
-                            <StaticImage alt="bus-top" src="../images/parallax/bus-top.png" />
+                            <StaticImage alt="bus-top" src="../images/parallax/bus-top.png" width={`100px`}  />
                         </motion.div>
 
                         <div className="object-wrap">

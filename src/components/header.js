@@ -8,8 +8,8 @@ const Header = () => {
         <div className="ud-header absolute bg-primary top-0 left-0 z-40 flex w-full items-center header">
             <div className="container">
                 <div className="relative -mx-4 flex items-center justify-between">
-                    <div className="w-40 max-w-full px-4">
-                        <Link to="/" className="navbar-logo block w-full py-5">
+                    <div className="w-20 max-w-full px-2">
+                        <Link to="/" className="navbar-logo block w-full">
                             <StaticImage src="../images/chatbus_logo.png" alt="logo" />
                         </Link>
                     </div>

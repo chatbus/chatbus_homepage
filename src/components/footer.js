@@ -4,11 +4,11 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const Footer = () => {
   return (
-    <div className="wow fadeInUp relative z-10 bg-black pt-20 pb-20 lg:pt-[60px]">
+    <div className="wow fadeInUp relative z-10 bg-black pt-5 pb-5 lg:pt-[20px]">
         <div className="container">
             <div className="-mx-4 flex flex-wrap items-center">
                 <div>
-                    <Link to="/" className="navbar-logo block w-full py-5 max-w-[140px]">
+                    <Link to="/" className="navbar-logo block w-full py-5 max-w-[100px]">
                         <StaticImage src="../images/chatbus_logo.png" alt="logo" className="chatbus logo" />
                     </Link>
                 </div>

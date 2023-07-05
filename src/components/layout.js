@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
   return (
     <ContextProviderComponent>
       <Header />
-      <main className="relative z-20 overflow-hidden pt-[170px] pb-[120px] h-max wrap w-full">
+      <main className="relative z-20 overflow-hidden pt-[100px] pb-[120px] h-max wrap w-full">
           <div className="my-1 flex justify-end container">
               <img alt="hits" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fchatbus.github.io&count_bg=%233056D3&title_bg=%23555555&icon=iconify.svg&icon_color=%23FFFFFF&title=%EC%A1%B0%ED%9A%8C%EC%88%98&edge_flat=false"/>
           </div>
